@@ -1,0 +1,27 @@
+# src/analysis.py
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def load_data(path):
+    """Load CSV file into pandas DataFrame"""
+    return pd.read_csv(path)
+
+def plot_magnitude_distribution(df, save_path=None):
+    plt.hist(df['magnitude'], bins=20, color='skyblue')
+    plt.xlabel('Magnitude')
+    plt.ylabel('Count')
+    plt.title('Magnitude Distribution')
+    if save_path:
+        plt.savefig(save_path)
+    plt.show()
+
+def plot_tsunami_count(df, save_path=None):
+    counts = df['tsunami'].value_counts()
+    counts.plot(kind='bar', color='salmon')
+    plt.xlabel('Tsunami (0=No, 1=Yes)')
+    plt.ylabel('Count')
+    plt.title('Tsunami Occurrences')
+    if save_path:
+        plt.savefig(save_path)
+    plt.show()
