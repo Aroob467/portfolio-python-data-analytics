@@ -20,3 +20,16 @@ It includes data cleaning, analysis, and visualization projects to demonstrate m
 ```bash
 git clone https://github.com/Aroob467/portfolio-python-data-analytics.git
 
+## Key Visualizations
+
+### 1. Earthquake Magnitude Distribution
+![Magnitude Distribution](results/magnitude_distribution.png)
+
+### 2. Depth vs Magnitude
+![Depth vs Magnitude](results/depth_vs_magnitude.png)
+
+### 3. Tsunami Occurrences
+![Tsunami Count](results/tsunami_count.png)
+
+### 4. Average Magnitude per Year
+![Average Magnitude per Year](results/avg_magnitude_year.png)
